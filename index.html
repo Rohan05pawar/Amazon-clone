@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="display-flex">
+                    <div class="left display-flex">
+                        <img src="images/logo.png" alt="" class="logo padding">
+                        <div class="location-section">
+                        <img src="images/location.png" alt="" class="location">
+                        <div>
+                            <a href="#" style="font-size: 13px; color: rgb(184, 184, 184);">Delivering to indore 452001</a><br>
+                            <a href="#" style="font-size: 16px;"> Update location</a>
+                        </div>
+                        </div>
+                    </div>
+
+                <div class="middle ">
+                    <div class="search-box display-flex">
+                        <input type="text" placeholder="Search Amazon.in" >
+                        <img src="images/search.png" alt="">
+                    </div>
+                </div>
+
+                <div class="right display-flex">
+                    <div class="language display-flex padding">
+                        <img src="images/flag.png" alt="">
+                        <a href="#" style="padding-top: 4px;">EN <i class="fa fa-caret-down"></i></a>
+                    </div>
+                    <div class="padding">
+                        <a href="#" style="font-size: 13px;">Hello, Sign in</a><br>
+                        <a href="#" style="font-size: 16px;"> Account & List <i class="fa fa-caret-down"></i></a>
+                    </div>
+                    <div class="padding">
+                        <a href="#" style="font-size: 13px;">Returns</a><br>
+                        <a href="#" style="font-size: 16px;"> & Order</a>
+                    </div>
+                    <div class="cart">
+                        <img src="images/cart.png" alt="">
+                        <a href="#">Cart</a>
+                    </div>
+                </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="second-nav">
+            <ul>
+                <a href="#"><img src="images/menu.png" alt=""></a>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Amazon miniTV</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Best Seller</a></li>
+                <li><a href="#">Today's Deals</a></li>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Electronic</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Prime <i class="fa fa-caret-down"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <!--------- End Header --------->
+
+    <!---------- Main Section ---------->
+
+    <script>
+        var i = 0;
+        images = [];
+        time = 3000;
+        images[0] = "images/banner1.jpg";
+        images[1] = "images/banner2.jpg";
+        images[2] = "images/banner3.jpg";
+
+        const changeImage = function(){
+            document.slider.src = images[i];
+
+            if(i<images.length-1){
+                i++;
+            }else{
+                i=0;
+            };
+
+            setTimeout("changeImage()", time);
+        };
+        window.onload = changeImage;
+    </script>
+
+    <section id="main">
+        <div class="bg-img">
+         <img name="slider" alt=""> <!-- changes -->
+    </div>
+        <div class="item-container">
+            <div class="itembox">
+                <h2>Revamp your home in style</h2>
+
+                <div class="img-adjust">
+                    <div>
+                        <img src="images/decor1.jpg" class="decorimg">
+                        <h4>Cushion cover & <br> bedsheet</h4>
+                    </div>
+
+                    <div>
+                        <img src="images/decor2.jpg" class="decorimg">
+                        <h4>Decorative Items</h4>
+                    </div>
+                </div>
+
+                <div class="img-adjust">
+                    <div>
+                        <img src="images/decor3.jpg" class="decorimg">
+                        <h4>Book Stand</h4>
+                    </div>
+                    <div>
+                        <img src="images/decor4.jpg" class="decorimg">
+                        <h4>Decorative light lamp</h4>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="#">Explore All</a>
+                </div>
+            </div>
+
+            <div class="itembox">
+                <h2>Revamp your home in style</h2>
+
+                <div class="img-adjust">
+                    <div>
+                        <img src="images/decor1.jpg" class="decorimg">
+                        <h4>Cushion cover & <br> bedsheet</h4>
+                    </div>
+
+                    <div>
+                        <img src="images/decor2.jpg" class="decorimg">
+                        <h4>Decorative Items</h4>
+                    </div>
+                </div>
+
+                <div class="img-adjust">
+                    <div>
+                        <img src="images/decor3.jpg" class="decorimg">
+                        <h4>Book Stand</h4>
+                    </div>
+                    <div>
+                        <img src="images/decor4.jpg" class="decorimg">
+                        <h4>Decorative light lamp</h4>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="#">Explore All</a>
+                </div>
+            </div>
+
+            <div class="itembox">
+                <h2>Revamp your home in style</h2>
+
+                <div class="img-adjust">
+                    <div>
+                        <img src="images/decor1.jpg" class="decorimg">
+                        <h4>Cushion cover & <br> bedsheet</h4>
+                    </div>
+
+                    <div>
+                        <img src="images/decor2.jpg" class="decorimg">
+                        <h4>Decorative Items</h4>
+                    </div>
+                </div>
+
+                <div class="img-adjust">
+                    <div>
+                        <img src="images/decor3.jpg" class="decorimg">
+                        <h4>Book Stand</h4>
+                    </div>
+                    <div>
+                        <img src="images/decor4.jpg" class="decorimg">
+                        <h4>Decorative light lamp</h4>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="#">Explore All</a>
+                </div>
+            </div>
+            
+            <div class="itembox">
+                <h2>Revamp your home in style</h2>
+
+                <div class="img-adjust">
+                    <div>
+                        <img src="images/decor1.jpg" class="decorimg">
+                        <h4>Cushion cover & <br> bedsheet</h4>
+                    </div>
+
+                    <div>
+                        <img src="images/decor2.jpg" class="decorimg">
+                        <h4>Decorative Items</h4>
+                    </div>
+                </div>
+
+                <div class="img-adjust">
+                    <div>
+                        <img src="images/decor3.jpg" class="decorimg">
+                        <h4>Book Stand</h4>
+                    </div>
+                    <div>
+                        <img src="images/decor4.jpg" class="decorimg">
+                        <h4>Decorative light lamp</h4>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="#">Explore All</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+</body>
+</html>
